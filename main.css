@@ -16,7 +16,7 @@ body {
     text-align: center;
 }
 
-/* HEADER (barra do topo) */
+/* HEADER */
 .header {
     width: 100%;
     background: #1a1a1a;
@@ -26,13 +26,12 @@ body {
     border-bottom: 4px solid #03be64;
 }
 
-/* título dentro do header */
 .header h1 {
     margin: 0;
     font-size: 3rem;
 }
 
-/* NAVBAR (canto superior esquerdo) */
+/* NAVBAR */
 .navbar {
     position: fixed;
     top: 10px;
@@ -51,18 +50,15 @@ body {
     z-index: 1000;
 }
 
-/* título da navbar */
 .navbar h1 {
     font-size: 1.2rem;
 }
 
-/* links lado a lado */
 .nav-links {
     display: flex;
     gap: 15px;
 }
 
-/* estilo dos links */
 .nav-links a {
     color: #00c853;
     text-decoration: none;
@@ -70,38 +66,25 @@ body {
     transition: 0.15s;
 }
 
-/* hover */
 .nav-links a:hover {
     color: #ff0000;
     border-bottom: 2px solid #00c853;
 }
 
-/* 🔥 CONTEÚDO (sem linha agora) */
+/* CONTEÚDO */
 .content {
-    margin-top: 40px;
+    margin-top: 60px;
     padding-top: 20px;
 }
 
-/* subtítulo */
 h2 {
     margin-bottom: 40px;
     font-weight: normal;
     color: #aaa;
 }
 
-/* título geral */
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-/* links */
-a {
-    text-decoration: none;
-}
-
-/* botões estilo loja */
-button {
+/* 🔥 BOTÕES (AGORA CORRETO) */
+.btn {
     display: block;
     width: 250px;
     margin: 15px auto;
@@ -111,20 +94,19 @@ button {
     background: linear-gradient(135deg, #00c853, #00e676);
     color: black;
 
-    border: none;
+    text-decoration: none;
     border-radius: 12px;
 
-    cursor: pointer;
     transition: 0.15s;
 }
 
 /* hover */
-button:hover {
+.btn:hover {
     transform: scale(1.05);
     background: linear-gradient(135deg, #00e676, #00c853);
 }
 
 /* click */
-button:active {
+.btn:active {
     transform: scale(0.98);
 }
