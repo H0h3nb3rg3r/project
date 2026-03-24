@@ -2,7 +2,7 @@
 .navbar {
     position: fixed;
     top: 10px;
-    right: 0;
+    left: 0;
     margin-right: 10px;
 
     background: #1a1a1a;
