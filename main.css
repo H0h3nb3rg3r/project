@@ -64,15 +64,15 @@ body {
 
 /* estilo dos links */
 .nav-links a {
-    color: white;
+    color: #00c853;
     text-decoration: none;
     font-size: 0.95rem;
-    transition: 0.3s;
+    transition: 0.15s;
 }
 
 /* hover */
 .nav-links a:hover {
-    color: #00e676;
+    color: #ff0000;
     border-bottom: 2px solid #00c853;
 }
 
@@ -117,7 +117,7 @@ button {
     border-radius: 12px;
 
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.15s;
 }
 
 /* hover */
