@@ -1,0 +1,82 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Corpo do site */
+body {
+    margin: 0; /* 🔥 remove espaço nas bordas */
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: #0f0f0f;
+    color: white;
+    border: 2px solid #00c853;
+    text-align: center;
+}
+
+/* HEADER (barra do topo) */
+.header {
+    width: 100%;
+    background: #1a1a1a;
+    padding: 20px 0;
+
+    border-top: 2px solid #00c853;
+    border-bottom: 4px solid #03be64;
+}
+
+/* título dentro do header */
+.header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+/* Espaçamento do conteúdo abaixo do header */
+h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #aaa;
+}
+
+/* Título principal (caso use fora do header) */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+/* Botões estilo loja */
+button {
+    display: block;
+    width: 250px;
+    margin: 15px auto;
+    padding: 15px;
+    font-size: 1.1rem;
+
+    background: linear-gradient(135deg, #00c853, #00e676);
+    color: black;
+
+    border: none;
+    border-radius: 12px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover */
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #00e676, #00c853);
+}
+
+/* Click */
+button:active {
+    transform: scale(0.98);
+}
