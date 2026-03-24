@@ -75,7 +75,7 @@ body {
 /* CARD */
 .card {
     position: relative;
-    height: 380px;
+    height: 480px;
 
     border-radius: 15px;
     overflow: hidden; /* 🔥 corta imagem no formato do card */
