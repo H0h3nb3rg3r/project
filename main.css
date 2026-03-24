@@ -3,12 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 /* Corpo do site */
 body {
-    margin: 0; /* 🔥 remove espaço nas bordas */
+    margin: 0;
     font-family: Arial, sans-serif;
     min-height: 100vh;
     background: #0f0f0f;
@@ -33,26 +32,77 @@ body {
     font-size: 3rem;
 }
 
-/* Espaçamento do conteúdo abaixo do header */
-h2 {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    font-weight: normal;
-    color: #ff0000;
+/* NAVBAR (canto superior direito) */
+.navbar {
+    position: fixed;
+    top: 10px;
+    right: 10px; /* 🔥 agora no canto direito */
+
+    background: #1a1a1a;
+    padding: 10px 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    border: 2px solid #00e676;
+    border-radius: 10px;
+
+    z-index: 1000;
 }
 
-/* Título principal (caso use fora do header) */
+/* título da navbar (tipo logo) */
+.navbar h1 {
+    font-size: 1.2rem;
+}
+
+/* links lado a lado */
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+/* estilo dos links */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+/* hover */
+.nav-links a:hover {
+    color: #00e676;
+    border-bottom: 2px solid #00c853;
+}
+
+/* 🔥 CONTEÚDO */
+.content {
+    margin-top: 100px;
+    padding-top: 20px;
+
+    border-top: 1px solid #333;
+}
+
+/* subtítulo */
+h2 {
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #aaa;
+}
+
+/* título geral */
 h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-/* Links */
+/* links */
 a {
     text-decoration: none;
 }
 
-/* Botões estilo loja */
+/* botões estilo loja */
 button {
     display: block;
     width: 250px;
@@ -61,7 +111,7 @@ button {
     font-size: 1.1rem;
 
     background: linear-gradient(135deg, #00c853, #00e676);
-    color: rgb(0, 0, 0);
+    color: black;
 
     border: none;
     border-radius: 12px;
@@ -70,13 +120,13 @@ button {
     transition: 0.3s;
 }
 
-/* Hover */
+/* hover */
 button:hover {
     transform: scale(1.05);
     background: linear-gradient(135deg, #00e676, #00c853);
 }
 
-/* Click */
+/* click */
 button:active {
     transform: scale(0.98);
 }
