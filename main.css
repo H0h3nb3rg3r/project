@@ -38,7 +38,7 @@ h2 {
     margin-top: 40px;
     margin-bottom: 20px;
     font-weight: normal;
-    color: #aaa;
+    color: #ff0000;
 }
 
 /* Título principal (caso use fora do header) */
@@ -61,7 +61,7 @@ button {
     font-size: 1.1rem;
 
     background: linear-gradient(135deg, #00c853, #00e676);
-    color: black;
+    color: rgb(0, 0, 0);
 
     border: none;
     border-radius: 12px;
