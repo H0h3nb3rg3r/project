@@ -1,9 +1,24 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
+    min-height: 100vh;
+    border: 2px solid #00c853;
+}
+
 /* NAVBAR */
 .navbar {
     position: fixed;
     top: 10px;
-    left: 0;
-    margin-right: 10px;
+    left: 10px;
 
     background: #1a1a1a;
     padding: 10px 20px;
@@ -18,12 +33,6 @@
     z-index: 1000;
 }
 
-/* logo */
-.navbar h1 {
-    font-size: 1.2rem;
-}
-
-/* links */
 .nav-links {
     display: flex;
     gap: 15px;
@@ -36,8 +45,110 @@
     transition: 0.15s;
 }
 
-/* hover */
 .nav-links a:hover {
     color: #ff0000;
     border-bottom: 2px solid #00c853;
+}
+
+/* HEADER COM IMAGEM */
+.header {
+    text-align: center;
+    padding: 140px 20px 80px;
+
+    background: 
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+        url("./imagens/fundoD.jpg");
+
+    background-size: auto;
+    background-position: center;
+
+    border-bottom: 3px solid #00c853;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* TÍTULO */
+.header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px rgba(0, 255, 100, 0.5);
+}
+
+/* SUBTÍTULO */
+.header p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* GRID PRODUTOS */
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 30px;
+}
+
+/* CARD PRODUTO */
+.product {
+    background: #1a1a1a;
+    border: 2px solid #00e676;
+    border-radius: 15px;
+
+    overflow: hidden;
+    text-align: center;
+
+    transition: 0.25s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    border-color: #00c853;
+}
+
+/* IMAGEM */
+.product img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+/* TEXTO */
+.product h2 {
+    margin: 15px 0 5px;
+}
+
+.product p {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* PREÇO */
+.product span {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.3rem;
+    color: #00e676;
+    font-weight: bold;
+}
+
+/* BOTÃO */
+.product button {
+    margin-bottom: 15px;
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #00c853;
+    color: black;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.product button:hover {
+    background: #00e676;
 }

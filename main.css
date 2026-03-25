@@ -15,17 +15,30 @@ body {
     text-align: center;
 }
 
-/* HEADER */
+/* HEADER 🔥 ATUALIZADO */
 .header {
     width: 100%;
-    background: #1a1a1a;
-    padding: 20px 0;
+    padding: 140px 20px 80px;
+
+    /* 🔥 IMAGEM + OVERLAY */
+    background: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url("./imagens/fundoMain.jpg");
+
+    background-size: auto;
+    background-position: center;
+
     border-top: 2px solid #00c853;
     border-bottom: 4px solid #03be64;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    text-shadow: 0 0 15px rgba(0, 255, 100, 0.5);
 }
 
 /* NAVBAR */
@@ -67,7 +80,7 @@ body {
 /* GRID 4 COLUNAS */
 .cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 🔥 4 colunas */
+    grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     padding: 30px;
 }
@@ -78,7 +91,7 @@ body {
     height: 480px;
 
     border-radius: 15px;
-    overflow: hidden; /* 🔥 corta imagem no formato do card */
+    overflow: hidden;
 
     text-decoration: none;
     color: white;
@@ -92,12 +105,12 @@ body {
 .card img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* 🔥 preenche bonito */
+    object-fit: cover;
 
     transition: 0.3s;
 }
 
-/* DEGRADÊ ESCURO */
+/* DEGRADÊ */
 .card::after {
     content: "";
     position: absolute;
@@ -129,7 +142,7 @@ body {
     border-color: #00c853;
 }
 
-/* ZOOM NA IMG */
+/* ZOOM */
 .card:hover img {
     transform: scale(1.1);
 }
