@@ -15,18 +15,10 @@ body {
     text-align: center;
 }
 
-/* HEADER 🔥 ATUALIZADO */
+/* HEADER 🔥 AJUSTADO (MENOR) */
 .header {
     width: 100%;
-    padding: 140px 20px 80px;
-
-    /* 🔥 IMAGEM + OVERLAY */
-    background: 
-        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-        url("./imagens/fundoMain.jpg");
-
-    background-size: auto;
-    background-position: center;
+    padding: 100px 20px 50px; /* 🔥 antes era 140 / 80 */
 
     border-top: 2px solid #00c853;
     border-bottom: 4px solid #03be64;
@@ -34,11 +26,43 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative; /* 🔥 necessário pro logo */
 }
 
 .header h1 {
     font-size: 3.5rem;
     text-shadow: 0 0 15px rgba(0, 255, 100, 0.5);
+}
+
+/* LOGO HS NO CANTO */
+.logo-hs {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    z-index: 2;
+}
+
+/* TEXTO HS */
+.logo-hs span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00e676;
+
+    text-shadow: 0 0 10px rgba(0, 255, 100, 0.7);
+}
+
+/* HALTER */
+.logo-hs img {
+    width: 35px;
+    height: 35px;
+
+    filter: drop-shadow(0 0 8px rgba(0, 255, 100, 0.6));
 }
 
 /* NAVBAR */
@@ -147,19 +171,23 @@ body {
     transform: scale(1.1);
 }
 
-
-
-
-/* CTA (What do you want today?) */
+/* CTA */
 .cta {
     margin-top: 10px;
-    padding: 20px 20px;
+    padding: 20px;
     text-align: center;
 }
 
 .cta h2 {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     font-weight: normal;
     color: #ff0000;
     font-size: 1.8rem;
+}
+/* IMAGEM NA NAVBAR */
+.navbar img {
+    height: 30px; /* 🔥 controla o tamanho */
+    width: auto;
+
+    border-radius: 5px; /* opcional (deixa mais bonito) */
 }

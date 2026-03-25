@@ -152,3 +152,10 @@ body {
 .product button:hover {
     background: #00e676;
 }
+/* IMAGEM NA NAVBAR */
+.navbar img {
+    height: 30px; /* 🔥 controla o tamanho */
+    width: auto;
+
+    border-radius: 5px; /* opcional (deixa mais bonito) */
+}
